@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+img {
+    width: 100%;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-index {
+    background-image: url(/images/panellarge.jpg);
+    background-size: cover;
+}
+
+h1 {
+    background-color: rgba(168, 168, 168, .75);
+    padding: 10px;
+}
