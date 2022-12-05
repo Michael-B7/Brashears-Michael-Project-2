@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,4 +27,68 @@ img {
 h1 {
     background-color: rgba(168, 168, 168, .75);
     padding: 10px;
+    font-size: 5rem;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #ECA654;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+main {
+    margin: 0 25% 20px 25%;
+}
+
+.info-text {
+    width: 60%;
+    background-color: #ECA654;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.info-img {
+    width: 38%;
+    padding: 5px;
+    border: 5px;
+    border-style: solid;
+    border-color: #ECA654;
+}
+
+.solar-info {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+}
+
+.environment {
+    background-color: #ECA654;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p {
+    font-size: 1.75rem;
 }
