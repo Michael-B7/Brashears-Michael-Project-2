@@ -1,5 +1,7 @@
 html {
     font-size: 16px;
+    background-color: #a8a8a8;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
 
 * {
@@ -8,8 +10,12 @@ html {
     box-sizing: border-box;
 }
 
+main>* {
+    margin: 15px 0px 15px 0px;
+}
+
 img {
-    width: 100%;
+    min-width: 100%;
 }
 
 .hero {
@@ -24,6 +30,7 @@ img {
     background-size: cover;
 }
 
+
 h1 {
     background-color: rgba(168, 168, 168, .75);
     padding: 10px;
@@ -36,11 +43,10 @@ ul {
     padding: 15px;
     display: flex;
     justify-content: center;
-    background-color: #ECA654;
 }
 
 li {
-    display: inline;
+    /* display: inline; */
     padding: 10px;
 }
 
@@ -51,7 +57,13 @@ li a {
 }
 
 main {
-    margin: 0 25% 20px 25%;
+    margin: 40px 25% 40px 25%;
+    
+
+}
+
+nav {
+    background-color: #ECA654;
 }
 
 .info-text {
@@ -73,13 +85,13 @@ h2 {
     border: 5px;
     border-style: solid;
     border-color: #ECA654;
+    background-color: white;
 }
 
 .solar-info {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-    margin: 20px 0 20px 0;
 }
 
 .environment {
@@ -91,4 +103,68 @@ h2 {
 
 p {
     font-size: 1.75rem;
+}
+
+.savings {
+    display: flex;
+    justify-content: space-between;
+}
+.savings-img {
+    width: 38%;
+    border: 5px;
+    border-style: solid;
+    border-color: #ECA654;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #ECA654;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+footer>* {
+    width: 30%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav a {
+    text-decoration: underline;
+}
+
+/* second page */
+
+.hero-panels {
+    background-image: url("/images/alternative-g9abaef926_1280.jpg");
+    background-size: cover;
+}
+
+
+.types {
+    display: flex;
+}
+
+.types-text {
+    width: 50%;
+}
+
+.types img {
+    width: 20%;
 }
