@@ -15,7 +15,7 @@ main>* {
 }
 
 img {
-    min-width: 100%;
+    max-width: 100%;
 }
 
 .hero {
@@ -58,7 +58,9 @@ li a {
 
 main {
     margin: 40px 25% 40px 25%;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 
@@ -159,12 +161,48 @@ footer>* {
 
 .types {
     display: flex;
+    justify-content: space-between;
 }
 
 .types-text {
     width: 50%;
+    background-color: #ECA654;
+    padding: 15px;
+}
+
+.types div:not(.types-text) {
+    width: 23%;
+    height: 100%;
+    border: 5px solid #ECA654;
 }
 
 .types img {
-    width: 20%;
+    height: 100%;
 }
+
+table {
+    padding: 5px;
+    width: 100%;
+    background-color: #ECA654;
+}
+
+td, th {
+    border: 2px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+.efficiency, .cost {
+    width: 49%;
+    background-color: #ECA654;
+    padding: 15px;
+}
+
+.table {
+    width: 100%;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
