@@ -68,7 +68,11 @@ nav {
     background-color: #ECA654;
 }
 
-.info-text {
+.info-text,
+.savings-text,
+.manu-text,
+.reducc-text,
+.trans-text {
     width: 60%;
     background-color: #ECA654;
     padding: 30px;
@@ -96,7 +100,7 @@ h2 {
     justify-content: space-between;
 }
 
-.environment {
+section.environment-text {
     background-color: #ECA654;
     padding: 30px;
     display: flex;
@@ -183,16 +187,18 @@ footer>* {
 table {
     padding: 5px;
     width: 100%;
-    background-color: #ECA654;
+    
 }
 
 td, th {
     border: 2px solid black;
     text-align: center;
     padding: 5px;
+    background-color: #ECA654;
 }
 
-.efficiency, .cost {
+.efficiency-text, 
+.cost-text {
     width: 49%;
     background-color: #ECA654;
     padding: 15px;
@@ -206,3 +212,14 @@ td:first-child {
     font-weight: bold;
 }
 
+[class$="text"] {
+    border: 5px solid rgba(22, 22, 22, 0.5);
+}
+
+/* third page */
+
+.hero-env {
+    background-image: url("../images/factory-gead335f18_1280.jpg");
+    background-size: cover;
+    background-position: center;
+}
