@@ -10,6 +10,66 @@ html {
     box-sizing: border-box;
 }
 
+body{
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    border: 2px solid black;
+    background: #ECA654; 
+    border-radius: 10px;
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e78d27;
+    visibility: visible; 
+}
+
+div * {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: none !important;
+    background-color: transparent;
+}
+::-webkit-scrollbar {
+    width: 3px !important;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+
+.on-scrollbar{
+    scrollbar-width: thin; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+}
+
+.on-scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    background-color: transparent;
+}
+
+.on-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+.on-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #acacac;
+}
+
 main>* {
     margin: 15px 0px 15px 0px;
 }
@@ -74,7 +134,7 @@ nav {
     background-color: #ECA654;
     width: 100%;
     position: fixed;
-    border-bottom: 2px solid black;
+    border: 2px solid black;
 }
 
 
