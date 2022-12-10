@@ -2,6 +2,7 @@ html {
     font-size: 16px;
     background-color: #a8a8a8;
     background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -11,31 +12,28 @@ html {
 }
 
 body{
-    overflow: overlay;
+    overflow-y: overlay;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-
+    width: 8px;
+    
 }
 
-
-
 ::-webkit-scrollbar-thumb {
-    border: 2px solid black;
     background: #ECA654; 
     border-radius: 10px;
-    
+    border: 2px solid black;
+    opacity: 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #e78d27;
-    visibility: visible; 
 }
 
-div * {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE 10+ */
+/* div * {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 ::-webkit-scrollbar-track {
@@ -52,8 +50,8 @@ div * {
 
 
 .on-scrollbar{
-    scrollbar-width: thin; /* Firefox */
-    -ms-overflow-style: none; /* IE 10+ */
+    scrollbar-width: thin; 
+    -ms-overflow-style: none; 
 }
 
 .on-scrollbar::-webkit-scrollbar-track {
@@ -67,8 +65,10 @@ div * {
 }
 
 .on-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #acacac;
-}
+    background-color: #ECA654;
+    
+} */
+
 
 main>* {
     margin: 15px 0px 15px 0px;
@@ -79,7 +79,7 @@ img {
 }
 
 .hero {
-    height: 90vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,10 +92,11 @@ img {
 
 
 h1 {
-    background-color: rgba(168, 168, 168, .75);
+    text-shadow: 0px 0px 10px white;
     padding: 10px;
     font-size: 5rem;
     text-align: center;
+    
 }
 
 ul {
@@ -107,7 +108,7 @@ ul {
 
 li {
     /* display: inline; */
-    padding: 10px;
+    padding: 20px;
 }
 
 li a {
@@ -134,7 +135,8 @@ nav {
     background-color: #ECA654;
     width: 100%;
     position: fixed;
-    border: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 
@@ -216,7 +218,8 @@ footer {
     justify-content: space-evenly;
     background-color: #ECA654;
     align-items: center;
-    border-top: 2px solid black ;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 footer p {
