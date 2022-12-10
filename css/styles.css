@@ -63,7 +63,7 @@ p a {
 }
 
 main {
-    margin: 40px 25% 40px 25%;
+    margin: 40px 10% 40px 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -112,6 +112,7 @@ h2 {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 section.environment-text {
@@ -145,7 +146,7 @@ p {
     border-color: #ECA654;
     background-color: white;
     border: 5px solid rgba(0, 0, 0, 0.5);
-
+    height: fit-content;
 }
 
 
