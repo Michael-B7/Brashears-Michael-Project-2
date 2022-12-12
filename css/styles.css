@@ -377,9 +377,10 @@ td:first-child {
     
     .types div:not(.types-text) {
         width: 49%;
-        height: 20%;
+        height: 25%;
         border: 5px solid rgba(0, 0, 0, 0.5);
         order: -1;
+        margin: 0 0 5px 0;
     }
 
     .types img {
