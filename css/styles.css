@@ -405,4 +405,9 @@ td:first-child {
     li {
         padding: 10px;
     }
+
+    td:first-child,
+    th:first-child {
+        display:none;
+    }
 }
