@@ -413,4 +413,17 @@ td:first-child {
     table {
         width: 100%;
     }
+
+    footer {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    footer div {
+        width: 100%;
+    }
+
+    .nav ul {
+        flex-direction: row;
+    }
 }
