@@ -16,7 +16,7 @@ body{
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
     
 }
 
@@ -30,45 +30,6 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background: #e78d27;
 }
-
-/* div * {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: none !important;
-    background-color: transparent;
-}
-::-webkit-scrollbar {
-    width: 3px !important;
-    background-color: transparent;
-}
-::-webkit-scrollbar-thumb {
-    background-color: transparent;
-}
-
-
-.on-scrollbar{
-    scrollbar-width: thin; 
-    -ms-overflow-style: none; 
-}
-
-.on-scrollbar::-webkit-scrollbar-track {
-    -webkit-box-shadow: none;
-    background-color: transparent;
-}
-
-.on-scrollbar::-webkit-scrollbar {
-    width: 6px;
-    background-color: transparent;
-}
-
-.on-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #ECA654;
-    
-} */
-
 
 main>* {
     margin: 15px 0px 15px 0px;
@@ -107,7 +68,6 @@ ul {
 }
 
 li {
-    /* display: inline; */
     padding: 20px;
 }
 
@@ -145,7 +105,7 @@ nav {
 .manu-text,
 .reducc-text,
 .trans-text {
-    width: 60%;
+    width: 70%;
     background-color: #ECA654;
     padding: 30px;
     display: flex;
@@ -155,7 +115,8 @@ nav {
 h2 {
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.75rem;
 }
 
 /* .info-img {
@@ -170,7 +131,8 @@ h2 {
 .solar-info,
 .manufacturing,
 .transport,
-.reduction {
+.reduction,
+.savings {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
@@ -192,17 +154,19 @@ p {
     display: flex;
     justify-content: space-between;
 }
+
 .trans-img {
-    width: 38%;
+    width: 28%;
     background-color:  rgba(0, 0, 0, 0.5);
     padding: 5px;
     height: fit-content;
 }
+
 .savings-img,
 .info-img,
 .manu-img,
 .reducc-img {
-    width: 38%;
+    width: 28%;
     border: 5px;
     border-style: solid;
     border-color: #ECA654;
@@ -287,6 +251,7 @@ td, th {
     text-align: center;
     padding: 5px;
     background-color: #ECA654;
+    font-size: 1.5em;
 }
 
 .efficiency-text, 
@@ -294,6 +259,12 @@ td, th {
     width: 49%;
     background-color: #ECA654;
     padding: 15px;
+}
+
+.panels-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .table {
@@ -304,7 +275,7 @@ td:first-child {
     font-weight: bold;
 }
 
-[class$="text"] {
+[class$="text"]:not(.panels-text) {
     border: 5px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -314,4 +285,111 @@ td:first-child {
     background-image: url("../images/factory-gead335f18_1280.jpg");
     background-size: cover;
     background-position: center;
+}
+
+/* mobile*/
+
+@media only screen and (max-width: 1400px) {
+    p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        margin-bottom: 5px;
+    }
+
+    nav a {
+        font-size: 1.25em;
+    }
+
+    td, th {
+        font-size: 1em;
+    }
+
+    footer a {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .savings-img,
+    .info-img,
+    .manu-img,
+    .reducc-img {
+        width: 80%;
+        border: 5px;
+        border-style: solid;
+        border-color: #ECA654;
+        background-color: white;
+        border: 5px solid rgba(0, 0, 0, 0.5);
+        height: fit-content;
+        order: -1;
+        margin: 0 0 5px 0;
+    }
+
+    .trans-img {
+        width: 80%;
+        background-color:  rgba(0, 0, 0, 0.5);
+        padding: 5px;
+        height: fit-content;
+        order: -1;
+        margin: 0 0 5px 0;
+    }
+
+    .solar-info,
+    .manufacturing,
+    .transport,
+    .reduction,
+    .savings {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-text,
+    .savings-text,
+    .manu-text,
+    .reducc-text,
+    .trans-text {
+        width: 100%;
+        background-color: #ECA654;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .types {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .types-text {
+        width: 100%;
+        background-color: #ECA654;
+        padding: 15px;
+    }
+    
+    .types div:not(.types-text) {
+        width: 49%;
+        height: 58%;
+        border: 5px solid rgba(0, 0, 0, 0.5);
+        order: -1;
+    }
+
+    .types img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .efficiency-text {
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+
+    .cost-text {
+        width: 100%;
+    }
 }
