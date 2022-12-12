@@ -231,7 +231,7 @@ footer>* {
 
 .types div:not(.types-text) {
     width: 23%;
-    height: 100%;
+    height: 40vh;
     border: 5px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -309,6 +309,10 @@ td:first-child {
 
     footer a {
         font-size: 1em;
+    }
+
+    .types div:not(.types-text) {
+        height: 37vh;
     }
 }
 
