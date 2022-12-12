@@ -379,7 +379,7 @@ td:first-child {
     
     .types div:not(.types-text) {
         width: 49%;
-        height: 50%;
+        height: 20%;
         border: 5px solid rgba(0, 0, 0, 0.5);
         order: -1;
     }
