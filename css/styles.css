@@ -396,4 +396,8 @@ td:first-child {
     h1 {
         font-size: 3rem;
     }
+
+    li {
+        padding: 10px;
+    }
 }
