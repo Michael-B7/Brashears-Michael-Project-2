@@ -186,12 +186,20 @@ footer {
     border-bottom: 2px solid black;
 }
 
-footer p {
-    font-size: 1.2rem;
+footer p, footer address {
+    font-size: 1.3rem;
+    text-align: center;
 }
 
-footer>* {
+footer > * {
     width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer address {
+    padding: 5px;
 }
 
 .nav {
@@ -208,6 +216,7 @@ footer>* {
 
 .nav a {
     text-decoration: underline;
+    font-size: 1.3rem;
 }
 
 /* second page */
