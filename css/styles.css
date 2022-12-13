@@ -258,7 +258,7 @@ td, th {
     text-align: center;
     padding: 5px;
     background-color: #ECA654;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .efficiency-text, 
@@ -300,7 +300,7 @@ td:first-child {
 
 @media only screen and (max-width: 1400px) {
     p {
-        font-size: 1em;
+        font-size: 1rem;
     }
 
     h2 {
@@ -309,26 +309,30 @@ td:first-child {
     }
 
     nav a {
-        font-size: 1em;
+        font-size: 1rem;
     }
 
     td, th {
-        font-size: 1em;
+        font-size: 1rem;
     }
 
-    footer a {
-        font-size: 1em;
+    .nav a {
+        font-size: 1rem;
     }
 
     .types div:not(.types-text) {
         height: 37vh;
+    }
+
+    footer div * {
+        font-size: 1rem;
     }
 }
 
 @media only screen and (max-width: 900px) {
 
     td, th {
-        font-size: .75em;
+        font-size: .75rem;
     }
 
     .savings-img,
@@ -442,4 +446,5 @@ td:first-child {
     .nav ul {
         flex-direction: row;
     }
+
 }
