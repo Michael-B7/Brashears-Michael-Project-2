@@ -47,7 +47,7 @@ img {
 }
 
 .hero-index {
-    background-image: url(/images/panellarge.jpg);
+    background-image: url(/images/home-hero.jpg);
     background-size: cover;
 }
 
@@ -222,7 +222,7 @@ footer address {
 /* second page */
 
 .hero-panels {
-    background-image: url("/images/alternative-g9abaef926_1280.jpg");
+    background-image: url("/images/solar-panels-hero.jpg");
     background-size: cover;
 }
 
@@ -291,7 +291,7 @@ td:first-child {
 /* third page */
 
 .hero-env {
-    background-image: url("../images/factory-gead335f18_1280.jpg");
+    background-image: url("../images/environment-hero.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -321,7 +321,7 @@ td:first-child {
     }
 
     .types div:not(.types-text) {
-        height: 37vh;
+        height: 45vh;
     }
 
     footer div * {
